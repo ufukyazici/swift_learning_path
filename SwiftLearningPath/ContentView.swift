@@ -8,24 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isNight = false
+    let data = [
+        WeatherModel(day: "Pzt", imageName: "smoke.fill", degree: 15),
+        WeatherModel(day: "Sal", imageName: "sun.max.fill", degree: 25),
+        WeatherModel(day: "Çar", imageName: "smoke.fill", degree: 16),
+        WeatherModel(day: "Per", imageName: "sun.max.fill", degree: 25),
+        WeatherModel(day: "Cum", imageName: "smoke.fill", degree: 13)
+
+    ]
     var body: some View {
         ZStack{
-            BackgroundView(firstColor: .blue,
-                           secondColor: .white)
+            //BackgroundView(isNight: isNight)
+            ContainerRelativeShape()
+                .fill(isNight ? Color.black.gradient : Color.blue.gradient)
+                .ignoresSafeArea()
+                
             VStack(){
                 CityNameView(cityName: "Çınarcık")
-                WeatherDetailsView(weatherImage: "sun.max.fill", degree: 18)
+                WeatherDetailsView(weatherImage: isNight ? "moon.stars.fill" :"sun.max.fill", degree: 18)
                 Spacer()
                 HStack(spacing:30){
-                    WeatherView(day: "Pzt", imageName: "cloud.snow", degree: 20)
-                    WeatherView(day: "Sal", imageName: "smoke.fill", degree:16)
-                    WeatherView(day: "Çar", imageName: "sun.max.fill", degree:25)
-                    WeatherView(day: "Per", imageName: "smoke.fill", degree:16)
-                    WeatherView(day: "Cum", imageName: "cloud.snow", degree:16)
+                    ForEach(data,id:\.self) { datum in
+                        WeatherView(day: datum.day, imageName: datum.imageName, degree: datum.degree)
+                    }
                 }
                 Spacer()
                 Button{
-                    
+                    isNight.toggle()
                     
                 } label: {
                     WeatherButtonView(buttonText: "Change Day Time",
@@ -45,6 +55,7 @@ struct ContentView: View {
     ContentView()
 }
 
+
 struct WeatherView: View {
     var day:String
     var imageName:String
@@ -53,22 +64,25 @@ struct WeatherView: View {
         VStack{
             Text(day)
                 .font(.system(size: 20))
+                .foregroundStyle(.white)
             Image(systemName: imageName)
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
                 .frame(width: 40,height: 40)
             Text("\(degree)°")
+                .foregroundStyle(.white)
                 .font(.system(size: 20))
         }
     }
 }
 
 struct BackgroundView: View {
-    var firstColor: Color
-    var secondColor: Color
+    var isNight: Bool
     
     var body:some View{
-        LinearGradient(colors: [firstColor,secondColor], startPoint: .topLeading, endPoint: .bottomTrailing)
+        LinearGradient(colors: [isNight ? .black : .blue,
+                       isNight ? .gray : .white],
+                       startPoint: .topLeading, endPoint: .bottomTrailing)
             .ignoresSafeArea()
     }
 }
@@ -89,7 +103,7 @@ struct WeatherDetailsView: View {
     var body: some View {
         VStack{
             Image(systemName: weatherImage)
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
                 .frame(width: 180,height: 180)
             Text("\(degree)°")
@@ -99,16 +113,8 @@ struct WeatherDetailsView: View {
     }
 }
 
-struct WeatherButtonView:View {
-    var buttonText: String
-    var backgroundColor: Color
-    var textColor: Color
-    var body: some View {
-        Text(buttonText)
-            .font(.system(size: 30,weight: .bold))
-            .frame(width: 280,height: 50)
-            .background(backgroundColor)
-            .foregroundColor(textColor)
-            .cornerRadius(9)
-    }
+struct WeatherModel:Hashable{
+    var day:String
+    var imageName:String
+    var degree:Int
 }

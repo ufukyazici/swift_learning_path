@@ -14,6 +14,7 @@
 		3067B13E2AD0DE82001F51C8 /* SwiftLearningPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067B13D2AD0DE82001F51C8 /* SwiftLearningPathTests.swift */; };
 		3067B1482AD0DE82001F51C8 /* SwiftLearningPathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067B1472AD0DE82001F51C8 /* SwiftLearningPathUITests.swift */; };
 		3067B14A2AD0DE82001F51C8 /* SwiftLearningPathUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067B1492AD0DE82001F51C8 /* SwiftLearningPathUITestsLaunchTests.swift */; };
+		3092AE852AD3C26400F27F66 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092AE842AD3C26400F27F66 /* WeatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3067B1432AD0DE82001F51C8 /* SwiftLearningPathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLearningPathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3067B1472AD0DE82001F51C8 /* SwiftLearningPathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearningPathUITests.swift; sourceTree = "<group>"; };
 		3067B1492AD0DE82001F51C8 /* SwiftLearningPathUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearningPathUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3092AE842AD3C26400F27F66 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				3067B12E2AD0DE80001F51C8 /* ContentView.swift */,
 				3067B1302AD0DE82001F51C8 /* Assets.xcassets */,
 				3067B1322AD0DE82001F51C8 /* Preview Content */,
+				3092AE842AD3C26400F27F66 /* WeatherButton.swift */,
 			);
 			path = SwiftLearningPath;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				3067B12F2AD0DE80001F51C8 /* ContentView.swift in Sources */,
 				3067B12D2AD0DE80001F51C8 /* SwiftLearningPathApp.swift in Sources */,
+				3092AE852AD3C26400F27F66 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
