@@ -15,7 +15,6 @@ struct ContentView: View {
         WeatherModel(day: "Çar", imageName: "smoke.fill", degree: 16),
         WeatherModel(day: "Per", imageName: "sun.max.fill", degree: 25),
         WeatherModel(day: "Cum", imageName: "smoke.fill", degree: 13)
-
     ]
     var body: some View {
         ZStack{
@@ -28,9 +27,11 @@ struct ContentView: View {
                 CityNameView(cityName: "Çınarcık")
                 WeatherDetailsView(weatherImage: isNight ? "moon.stars.fill" :"sun.max.fill", degree: 18)
                 Spacer()
-                HStack(spacing:30){
+                HStack(spacing:20){
                     ForEach(data,id:\.self) { datum in
-                        WeatherView(day: datum.day, imageName: datum.imageName, degree: datum.degree)
+                        WeatherView(day: datum.day, 
+                                    imageName:datum.imageName,
+                                    degree: datum.degree)
                     }
                 }
                 Spacer()
@@ -63,16 +64,15 @@ struct WeatherView: View {
     var body: some View {
         VStack{
             Text(day)
-                .font(.system(size: 20))
-                .foregroundStyle(.white)
             Image(systemName: imageName)
                 .symbolRenderingMode(.multicolor)
                 .resizable()
                 .frame(width: 40,height: 40)
             Text("\(degree)°")
-                .foregroundStyle(.white)
-                .font(.system(size: 20))
         }
+        .foregroundColor(.white)
+        .font(.system(size: 20,weight: .medium))
+
     }
 }
 
