@@ -15,6 +15,7 @@
 		30FB997B2AD8240A00642EF1 /* apple_frameworksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB997A2AD8240A00642EF1 /* apple_frameworksUITestsLaunchTests.swift */; };
 		30FB99882AD8255400642EF1 /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB99872AD8255400642EF1 /* FrameworkModel.swift */; };
 		30FB998A2AD826ED00642EF1 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB99892AD826ED00642EF1 /* FrameworkGridView.swift */; };
+		30FB998C2AD8376A00642EF1 /* FrameworkDeatilsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB998B2AD8376A00642EF1 /* FrameworkDeatilsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		30FB997A2AD8240A00642EF1 /* apple_frameworksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_frameworksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30FB99872AD8255400642EF1 /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
 		30FB99892AD826ED00642EF1 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		30FB998B2AD8376A00642EF1 /* FrameworkDeatilsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDeatilsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				30FB995D2AD8240800642EF1 /* apple_frameworksApp.swift */,
 				30FB99892AD826ED00642EF1 /* FrameworkGridView.swift */,
+				30FB998B2AD8376A00642EF1 /* FrameworkDeatilsView.swift */,
 				30FB99872AD8255400642EF1 /* FrameworkModel.swift */,
 				30FB99612AD8240900642EF1 /* Assets.xcassets */,
 				30FB99632AD8240900642EF1 /* Preview Content */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30FB998C2AD8376A00642EF1 /* FrameworkDeatilsView.swift in Sources */,
 				30FB998A2AD826ED00642EF1 /* FrameworkGridView.swift in Sources */,
 				30FB995E2AD8240800642EF1 /* apple_frameworksApp.swift in Sources */,
 				30FB99882AD8255400642EF1 /* FrameworkModel.swift in Sources */,
