@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		302348A62AD8FCFA004A3621 /* LMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302348A52AD8FCFA004A3621 /* LMButton.swift */; };
 		302348A82AD902AC004A3621 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302348A72AD902AC004A3621 /* FrameworkGridViewModel.swift */; };
+		30541C372AD94F44004524D9 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30541C362AD94F44004524D9 /* SafariView.swift */; };
 		30FB995E2AD8240800642EF1 /* apple_frameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB995D2AD8240800642EF1 /* apple_frameworksApp.swift */; };
 		30FB99622AD8240900642EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FB99612AD8240900642EF1 /* Assets.xcassets */; };
 		30FB99652AD8240900642EF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FB99642AD8240900642EF1 /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		302348A52AD8FCFA004A3621 /* LMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMButton.swift; sourceTree = "<group>"; };
 		302348A72AD902AC004A3621 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		30541C362AD94F44004524D9 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		30FB995A2AD8240800642EF1 /* apple-frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apple-frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FB995D2AD8240800642EF1 /* apple_frameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_frameworksApp.swift; sourceTree = "<group>"; };
 		30FB99612AD8240900642EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				30FB99632AD8240900642EF1 /* Preview Content */,
 				302348A52AD8FCFA004A3621 /* LMButton.swift */,
 				302348A72AD902AC004A3621 /* FrameworkGridViewModel.swift */,
+				30541C362AD94F44004524D9 /* SafariView.swift */,
 			);
 			path = "apple-frameworks";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				30FB995E2AD8240800642EF1 /* apple_frameworksApp.swift in Sources */,
 				30FB99882AD8255400642EF1 /* FrameworkModel.swift in Sources */,
 				302348A82AD902AC004A3621 /* FrameworkGridViewModel.swift in Sources */,
+				30541C372AD94F44004524D9 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
