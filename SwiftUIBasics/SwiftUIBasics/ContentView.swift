@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var textField: String = ""
     var body: some View {
         ZStack{
             // MARK: BACKGROUND COLOR
@@ -24,6 +25,11 @@ struct ContentView: View {
                     Text("iCloud")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    TextField("SA", text: $textField)
+                    Image(systemName: textField.lowercased())
+                        .resizable()
+                        .frame(width: 200,height: 200)
+                        
                     // MARK: HORIZONTAL ICONS
                     HStack{
                         Spacer()
