@@ -12,25 +12,31 @@ struct ContentView: View {
         ZStack{
             LinearGradient(colors: [.red,.white], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
-            VStack{
+            VStack(alignment: .leading){
                 Image(systemName: "icloud")
                     .renderingMode(.original)
                     .resizable()
-                    .frame(width: 180,height: 180)
                     .scaledToFit()
+                    .frame(width: 160,height: 160)
                 Text("iCloud")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                HStack{
+                    Spacer()
+                    Image(systemName: "icloud.fill")
+                        .renderingMode(.original)
+                    Spacer()
+                    Image(systemName: "icloud.fill")
+                        .renderingMode(.original)
+                    Spacer()
+                    Image(systemName: "icloud.fill")
+                        .renderingMode(.original)
+                    Spacer()
+                }
+
             }
-            HStack{
-                Image(systemName: "icloud.fill")
-                    .renderingMode(.original)
-                Image(systemName: "icloud.fill")
-                    .renderingMode(.original)
-                Image(systemName: "icloud.fill")
-                    .renderingMode(.original)
-            }
-        }
+            
+    }
     }
 }
 
