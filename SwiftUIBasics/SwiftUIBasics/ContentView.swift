@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State var textField: String = ""
+    @State var isChanged: Bool = true
     var body: some View {
         ZStack{
             // MARK: BACKGROUND COLOR
-            LinearGradient(colors: [.red,Color("color_random")], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [isChanged ? .red : .black, isChanged ? Color("color_random"):.white], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             VStack(alignment: .leading){
                 // MARK: ICON AND TITLE
@@ -27,8 +28,14 @@ struct ContentView: View {
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     TextField("SA", text: $textField)
                     Image(systemName: textField.lowercased())
-                        .resizable()
-                        .frame(width: 200,height: 200)
+                    Button{
+                        isChanged = !isChanged
+                    }label: {
+                        Text("Change Color")
+                            .frame(width: 280,height: 50)
+                            .background(Color.purple)
+                            .cornerRadius(10)
+                    }
                         
                     // MARK: HORIZONTAL ICONS
                     HStack{
