@@ -16,6 +16,7 @@
 		300DF7AD2ADAF553002921E9 /* SwiftUIBasicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DF7AC2ADAF553002921E9 /* SwiftUIBasicsUITestsLaunchTests.swift */; };
 		309E2A3C2AEC3060005B5D4A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 309E2A3B2AEC3060005B5D4A /* Kingfisher */; };
 		309E2A3E2AEC309A005B5D4A /* PackageLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E2A3D2AEC309A005B5D4A /* PackageLearn.swift */; };
+		309E2A412AEC342E005B5D4A /* CircleAvatarTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E2A402AEC342E005B5D4A /* CircleAvatarTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		300DF7AA2ADAF553002921E9 /* SwiftUIBasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBasicsUITests.swift; sourceTree = "<group>"; };
 		300DF7AC2ADAF553002921E9 /* SwiftUIBasicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBasicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		309E2A3D2AEC309A005B5D4A /* PackageLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageLearn.swift; sourceTree = "<group>"; };
+		309E2A402AEC342E005B5D4A /* CircleAvatarTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAvatarTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		300DF78E2ADAF552002921E9 /* SwiftUIBasics */ = {
 			isa = PBXGroup;
 			children = (
+				309E2A3F2AEC340E005B5D4A /* View */,
 				300DF78F2ADAF552002921E9 /* SwiftUIBasicsApp.swift */,
 				300DF7912ADAF552002921E9 /* ContentView.swift */,
 				300DF7932ADAF553002921E9 /* Assets.xcassets */,
@@ -130,6 +133,14 @@
 				300DF7AC2ADAF553002921E9 /* SwiftUIBasicsUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIBasicsUITests;
+			sourceTree = "<group>";
+		};
+		309E2A3F2AEC340E005B5D4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				309E2A402AEC342E005B5D4A /* CircleAvatarTextView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 			files = (
 				300DF7922ADAF552002921E9 /* ContentView.swift in Sources */,
 				300DF7902ADAF552002921E9 /* SwiftUIBasicsApp.swift in Sources */,
+				309E2A412AEC342E005B5D4A /* CircleAvatarTextView.swift in Sources */,
 				309E2A3E2AEC309A005B5D4A /* PackageLearn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
