@@ -15,6 +15,7 @@ struct CircleAvatarTextView: View {
         VStack {
             KFImage(URL(string: imageUrl))
                 .fade(duration: 0.5)
+                .resizable()
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             Text(imageText)
         }

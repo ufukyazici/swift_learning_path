@@ -14,6 +14,7 @@ struct PackageLearn: View {
     var body: some View {
         CircleAvatarTextView(imageUrl: imageUrl, imageText: "Veli")
         
+        
     }
 }
 
