@@ -14,6 +14,10 @@
 		3026B3E92AEEFD6C006574D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3026B3E82AEEFD6C006574D6 /* Assets.xcassets */; };
 		3026B3EC2AEEFD6C006574D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3026B3EA2AEEFD6C006574D6 /* LaunchScreen.storyboard */; };
 		3026B3F52AEEFD83006574D6 /* SampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026B3F42AEEFD83006574D6 /* SampleProtocol.swift */; };
+		3026B3F92AEEFFB2006574D6 /* SampleExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026B3F72AEEFFB2006574D6 /* SampleExtensionViewController.swift */; };
+		3026B3FA2AEEFFB2006574D6 /* SampleExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3026B3F82AEEFFB2006574D6 /* SampleExtensionViewController.xib */; };
+		30713FCE2AF00A88005DA894 /* SampleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30713FCD2AF00A88005DA894 /* SampleExtension.swift */; };
+		30713FD02AF00CD4005DA894 /* ViewController+NibExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30713FCF2AF00CD4005DA894 /* ViewController+NibExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		3026B3EB2AEEFD6C006574D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3026B3ED2AEEFD6C006574D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3026B3F42AEEFD83006574D6 /* SampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleProtocol.swift; sourceTree = "<group>"; };
+		3026B3F72AEEFFB2006574D6 /* SampleExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleExtensionViewController.swift; sourceTree = "<group>"; };
+		3026B3F82AEEFFB2006574D6 /* SampleExtensionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleExtensionViewController.xib; sourceTree = "<group>"; };
+		30713FCD2AF00A88005DA894 /* SampleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleExtension.swift; sourceTree = "<group>"; };
+		30713FCF2AF00CD4005DA894 /* ViewController+NibExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+NibExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +81,29 @@
 		3026B3F32AEEFD75006574D6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3026B3F62AEEFF92006574D6 /* Extension */,
 				3026B3F42AEEFD83006574D6 /* SampleProtocol.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		3026B3F62AEEFF92006574D6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				30713FCC2AF00A23005DA894 /* Model */,
+				3026B3F72AEEFFB2006574D6 /* SampleExtensionViewController.swift */,
+				3026B3F82AEEFFB2006574D6 /* SampleExtensionViewController.xib */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		30713FCC2AF00A23005DA894 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30713FCD2AF00A88005DA894 /* SampleExtension.swift */,
+				30713FCF2AF00CD4005DA894 /* ViewController+NibExtension.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3026B3FA2AEEFFB2006574D6 /* SampleExtensionViewController.xib in Resources */,
 				3026B3EC2AEEFD6C006574D6 /* LaunchScreen.storyboard in Resources */,
 				3026B3E92AEEFD6C006574D6 /* Assets.xcassets in Resources */,
 				3026B3E72AEEFD6B006574D6 /* Main.storyboard in Resources */,
@@ -149,10 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30713FD02AF00CD4005DA894 /* ViewController+NibExtension.swift in Sources */,
 				3026B3E42AEEFD6B006574D6 /* ViewController.swift in Sources */,
 				3026B3E02AEEFD6B006574D6 /* AppDelegate.swift in Sources */,
 				3026B3E22AEEFD6B006574D6 /* SceneDelegate.swift in Sources */,
+				30713FCE2AF00A88005DA894 /* SampleExtension.swift in Sources */,
 				3026B3F52AEEFD83006574D6 /* SampleProtocol.swift in Sources */,
+				3026B3F92AEEFFB2006574D6 /* SampleExtensionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
